@@ -1,0 +1,25 @@
+{
+  "name": "Remove Popups",
+  "version": "1.0",
+  "description": "Нажатие \"~\" позволит перейти в режим удаления элементов ( повторное нажатие \"~\" вернет к обчному состоянию). Нажмите курсором на ненужные элементы. Ctrl + Z чтобы отменить изменения",
+  "background":{
+  
+		"service_worker": "background.js"
+		
+  }, 
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  
+   "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts":[
+	{
+		"matches": [
+			"<all_urls>"
+		],
+		"js": ["content.js"]
+	}
+  ]
+  
+}

@@ -1,0 +1,4 @@
+~ -> enable/disable deletion mode 
+		when enabled picture changes and cursor changes to crosshair
+			
+Ctrl + Z -> display removed items
