@@ -11,8 +11,17 @@
   "permissions": ["storage"],
   
    "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+
+    "default_icon": {
+      "16": "hand.pnd",
+      "32": "hand.pnd",
+      "48": "hand.pnd",
+      "128": "hand.pnd"
+    }
+
   },
+  
   "content_scripts":[
 	{
 		"matches": [
